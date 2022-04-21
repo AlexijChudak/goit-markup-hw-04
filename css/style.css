@@ -115,6 +115,10 @@ p {
   margin-right: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.auth-nav .mail,
+.auth-nav .phone {
+  fill: var(--paragraph-text-color);
+}
 .ref {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -138,6 +142,7 @@ p {
   padding-bottom: 200px;
   max-width: 1600px;
   height: 600px;
+  margin: 0, auto;
   background-image: 
   linear-gradient(
     rgba(47, 48, 58, 0.1),
@@ -145,8 +150,7 @@ p {
   url(../images/hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #C4C4C4;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #C4C4C4;   
 }
 .slogan {  
   margin-right: auto;
@@ -225,10 +229,12 @@ p {
   margin-right: 30px;  
 }
 .features-icon {
+  display: flex;
   width: 270px;
   height: 120px;
-  border-radius: 4px;  
-  padding: 25px 100px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;    
   margin-right: 0px;
   margin-bottom: 30px;
   background-color: var(--background-grey-color);
@@ -361,21 +367,21 @@ p {
 /* our clients */
 
 .logos { 
-  padding-top: 94px;
+  padding-top: 122px;
   padding-bottom: 94px;  
 } 
 .clients {
   margin-bottom: 50px;
 }
 .logos-item {
-width: 170px;
-height: 92px;
-display: inline-flex;
-justify-content: center;
-align-items: center;
-border-radius: 4px;
-/* background-color: tomato; */
-border: 1px solid var(--socialnet-sleep-color);
+  display: inline-flex;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  /* background-color: tomato; */
+  border: 1px solid var(--socialnet-sleep-color);
 }
 .client-box:not(:last-child) {
   margin-right: 30px;
@@ -386,30 +392,54 @@ border: 1px solid var(--socialnet-sleep-color);
 .logos-item:hover,
 .logos-item:focus {  
   border-color: var(--animation-color);
-  box-shadow: 
-  10px 4px 4px rgba(0, 0, 0, 0.25),
-  0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow:
+    10px 4px 4px rgba(0, 0, 0, 0.25),
+    0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.client-icon:hover,
-.client-icon:focus {
+.logos-item:hover .icon-logo,
+.logos-item:focus .icon-logo { 
   fill: var(--animation-color);
+  border-color: var(--animation-color);  
+}
+.logos-item:hover .icon-logoone,
+.logos-item:focus .icon-logoone {
+  fill: var(--animation-color);
+  border-color: var(--animation-color);
+}
+.logos-item:hover .icon-logotwo,
+.logos-item:focus .icon-logotwo {
+  fill: var(--animation-color);
+  border-color: var(--animation-color);
+}
+.logos-item:hover .icon-logothree,
+.logos-item:focus .icon-logothree {
+  fill: var(--animation-color);
+  border-color: var(--animation-color);
+}
+.logos-item:hover .icon-logofour,
+.logos-item:focus .icon-logofour {
+  fill: var(--animation-color);
+  border-color: var(--animation-color);
+}
+.logos-item:hover .icon-logofive,
+.logos-item:focus .icon-logofive {
+  fill: var(--animation-color);
+  border-color: var(--animation-color);
 }
 /* Footer */
 
 footer {  
-  display: flex;
-  max-width: 1600px;
   padding-top: 60px;
   padding-bottom: 60px;
   background: var(--background-main-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
+}
+.box {
+  display: flex;
+  align-items: baseline;
 }
 .infooter {
-  padding-top: 60px;
-}
-.box {    
-  margin-right: 70px;
+  padding-right: 70px;
 }
 .footer-logo { 
   display: block;  
@@ -474,6 +504,9 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   0px 4px 4px rgba(0, 0, 0, 0.25),
   0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+.footer-social .social-icon {
+  fill: var(--secondary-color);
+}
 
 /* Page Portfolio */
 /* Our Projects */
@@ -511,11 +544,68 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 .project {
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.project:hover {
+.project-tekno:hover {
+  display: block;
   box-shadow:
   0px 1px 1px rgba(0, 0, 0, 0.12),
   0px 4px 4px rgba(0, 0, 0, 0.06),
   1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-basket:hover {
+  display: block;
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-rest:hover {
+  display: block;
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-headphones:hover {
+  display: block;
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-boxes:hover {
+  display: block;
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-monic:hover {
+  display: block;
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-design:hover {
+  display: block;
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-tag:hover {
+  display: block;
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.project-laptop:hover {
+  display: block;
+  box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .project-list {
   flex-wrap: wrap;  
