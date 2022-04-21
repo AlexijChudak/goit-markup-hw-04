@@ -136,7 +136,7 @@ p {
 /* Content of page */
 /* hero */
 .hero {
-  
+  margin: 0, auto;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
